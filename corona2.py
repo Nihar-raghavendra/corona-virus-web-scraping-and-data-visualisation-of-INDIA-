@@ -40,7 +40,7 @@ def pie_cases():
     percent = 100*df['Covid Cases']/df['Covid Cases'].sum()
     labels = [f'{i} - {j:1.2f} %' for i,j in zip(df['States'], percent)] #
     plt.legend(patches,labels[::-1],bbox_to_anchor=(-0.1, 1.05),title="State wise covid cases percentage",fontsize='medium')
-
+# Choropleth Map
 def coro_map():
     world_map = folium.Map(tiles="Mapbox Bright", location=[20.5937, 78.9629], zoom_start=4.4)
     geo = r'./yy.geojson'
