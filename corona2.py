@@ -50,7 +50,7 @@ def coro_map():
         columns =['States','Covid Cases'],
         fill_color='Set1',
         key_on = 'feature.properties.NAME_1',
-        legend_name = "Highest Covid-19 recovered patients Countries"
+        legend_name = "Covid-19 Cases"
     )
     world_map.save('./Map.html')
     print('Map saved at current location as Map.html')
